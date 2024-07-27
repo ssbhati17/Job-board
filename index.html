@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Job Portal</h1>
+        <nav>
+            <a href="#" id="homeLink">Home</a>
+            <a href="#" id="jobsLink">Job Listings</a>
+            <a href="#" id="candidateLink">Candidate Dashboard</a>
+        </nav>
+    </header>
+    <br>
+    <main id="main-content">
+        <!-- Home Page -->
+        <section id="home" class="page">
+            <h2 style="padding: 0.5rem; margin: 0.2rem;">Welcome to the Job Portal</h2>
+
+            <div id="featured-jobs" class="job-list">
+                <!-- Featured jobs will be inserted here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Job Listings Page -->
+        <section id="job-listings" class="page hidden">
+            <h2>Job Listings</h2>
+            <div id="job-list" class="job-list">
+                <!-- Job listings will be inserted here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Job Detail Page -->
+        <section id="job-detail" class="page hidden">
+            <button id="backButton" style="padding: 0.5rem; margin: 0.2rem;">Back to Listings</button>
+            <div id="job-detail-content">
+                <!-- Job details will be inserted here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Candidate Dashboard -->
+        <section id="candidate-dashboard" class="page hidden">
+            <h2>Candidate Dashboard</h2>
+            <form id="application-form">
+                <h3>Apply for a Job</h3>
+                <label for="candidate-name">Name:</label>
+                <input type="text" id="candidate-name" required>
+
+                <label for="candidate-email">Email:</label>
+                <input type="email" id="candidate-email" required>
+
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" required>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>We are dedicated to connecting employers and job seekers through our job portal.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Job Listings</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: support@jobportal.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Job Portal. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
